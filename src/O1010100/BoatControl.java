@@ -29,7 +29,7 @@ public class BoatControl implements Listener
 				if(!(ent.getLastDamageCause() instanceof Player))
 				{
 					e.setCancelled(true);
-					//e.setDamage(0);
+					e.setDamage(0);
 					Log.info("Boat Should Not Have Broken...");
 					e.getEntity().getPassenger().sendMessage("Boat Should Not Have Broken...");
 				}

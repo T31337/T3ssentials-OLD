@@ -145,6 +145,8 @@ commands:
 permissions: 
     T3.*: 
         children:
+        	T3.Smite.Denied: true
+        	T3.Smite: true
             T3.PVP: true
             T3.Day: true
             T3.Night: true
@@ -336,3 +338,9 @@ permissions:
     T3.setSpawn:
         default: false
         description: "Set World Spawn Point"
+    T3.Smite.Denied:
+    	description: "Prevents Player From Being Smitten"
+    	default: op
+    T3.Smite:
+    	description: "Allows Player To Smite Others"
+    	default: op

@@ -35,7 +35,7 @@ public class smite implements CommandExecutor
 			  else
 			  {
 				  Player t = (Player) Bukkit.getServer().getPlayer(args[0]);
-				  if(!(t.hasPermission("T3.Other.Denied")))
+				  if(!(t.hasPermission("T3.Smite.Denied")))
 				  {
 				  t.getWorld().strikeLightning(t.getLocation());
 				  Bukkit.broadcastMessage(ChatColor.BLUE+t.getDisplayName()+ChatColor.AQUA+" Has Been Smitten!");

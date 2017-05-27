@@ -25,7 +25,7 @@ public class kk implements CommandExecutor
 				sender.sendMessage(ChatColor.RED + "Usage: /" + cmd.getName() + " <player> (Message)");
 				return true;
 			}
-			if(args.length == 0)
+			if(args.length > 1)
 			{
 				Player t = Bukkit.getPlayer(args[0]);
 
@@ -48,6 +48,7 @@ public class kk implements CommandExecutor
 			}
 			else
 			{
+				//We Should Not Get This Message...
 				sender.sendMessage(ChatColor.DARK_AQUA+"Please Kick Only One Person At A Time...");
 				return true;
 			}

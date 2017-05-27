@@ -102,7 +102,7 @@ public class bed implements CommandExecutor
 			else
 			{
 				sender.sendMessage("Sorry, You Do Not Have Permission To Do That...");
-				Bukkit.getLogger().info(sender.getName()+" Was DENIED Access To /Bed");
+				//Bukkit.getLogger().info(sender.getName()+" Was DENIED Access To /Bed");
 				return false;
 			}
 		}

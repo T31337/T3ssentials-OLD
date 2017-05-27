@@ -31,6 +31,7 @@ public class setSpawn implements CommandExecutor
 				World w = p.getWorld();
 				Location loc = p.getLocation();
 				w.setSpawnLocation(loc.getBlockX(),loc.getBlockY(),loc.getBlockZ());
+				p.sendMessage(String.format("World Spawn Set ({0},{1},{2})", loc.getBlockX(),loc.getBlockY(),loc.getBlockZ()));
 				return true;
 			}
 		}

@@ -16,6 +16,7 @@ public class summon implements CommandExecutor
 		this.plugin = plugin;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command cmd, String cmdName, String[] args)	
 	{
 		if(!(sender instanceof Player))
