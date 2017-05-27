@@ -26,7 +26,7 @@ public class ec implements CommandExecutor
 			  if(sender.hasPermission("T3.EnderChest.Other"))
 			  {
 				
-				  if(!t.hasPermission("T3.EnderChest.Other.Denied"))
+				  if(!t.hasPermission("T3.EnderChest.Denied"))
 				  {
 					  p.openInventory(t.getEnderChest());
 					  Bukkit.getLogger().info(sender.getName()+" Was ALLOWED Access To /ec <"+t.getName()+">");

@@ -25,7 +25,7 @@ public class rl implements CommandExecutor
 		}
 		else
 		{
-			if(sender.hasPermission("T3.RandomLocation"))
+			if(sender.hasPermission("T3.Random"))
 			{
 				int distance = 1500;
 				Player player = (Player) sender;

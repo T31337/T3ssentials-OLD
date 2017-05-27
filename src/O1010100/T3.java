@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
@@ -20,6 +21,7 @@ public class T3 extends JavaPlugin
 	public boolean SpawnGifts=true;
 	CfgMgr cfgmgr;
 	Cfg T3Cfg;
+	public static Location DeathLocation;
 	ItemStack[] PlayerItems;
 	public static T3 plugin;
 	Messanger msgr;

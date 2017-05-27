@@ -35,7 +35,7 @@ public class PoweredCreeper implements CommandExecutor
 					if(sender instanceof Player)
 					{
 						Player p = (Player)sender;
-						 Creeper crpr=(Creeper)p.getWorld().spawn(p.getEyeLocation().add((p.getLocation().getDirection().getZ()-5), 0, 0), Creeper.class);
+						 Creeper crpr=(Creeper)p.getWorld().spawn(p.getEyeLocation().add((p.getLocation().getDirection().getZ()+3), 0, 0), Creeper.class);
 						 crpr.setPowered(true);
 						p.sendMessage("Creeper Spawned, Watch Out!");//Not Always Infront Of Player - Not Sure Why...
 						return true;

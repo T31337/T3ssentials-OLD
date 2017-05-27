@@ -14,6 +14,6 @@ public class PlayerLeave implements Listener
 	{
 		Player p = e.getPlayer();
 		e.setQuitMessage(ChatColor.BLUE+p.getDisplayName()+" Went To Saturn, Neptune Or Possably Even Pluto!");
-		e.getQuitMessage();
+		//e.getQuitMessage();
 	}
 }

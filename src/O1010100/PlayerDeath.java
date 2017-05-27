@@ -1,6 +1,7 @@
 package O1010100;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -20,11 +21,11 @@ public class PlayerDeath implements Listener
 			 event.setDeathMessage(ChatColor.BLUE+p.getName()+ChatColor.RESET+" Just Died! :<");
 			 //p.chat("Oh Drat, I Have Died! :(");
 		 }
-		 
-		 if(p.hasPermission("T3.Respawn2Spawn"))
+		 T3.DeathLocation =  p.getLocation();
+		 if(p.hasPermission("T3.Respawn"))
 		 {
 			 p.teleport(p.getWorld().getSpawnLocation());
-		 }
+		 }		 
 	 }//playerDeath 
 	 
 }

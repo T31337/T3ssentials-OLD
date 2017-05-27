@@ -16,11 +16,18 @@ public class PlayerRespawn implements Listener
 		this.plugin=plugin;
 	}
 	
+	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void PlayerRespawning(PlayerRespawnEvent event)
 	{
 		if(event.getPlayer().hasPermission("T3.Respawn"))
+		{
 			event.getPlayer().teleport(event.getPlayer().getWorld().getSpawnLocation());
+		}
+		else
+		{
+			event.getPlayer().teleport(T3.DeathLocation);
+		}
 		
 		if(T3.plugin.SpawnGifts)
 		{

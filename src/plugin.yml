@@ -1,346 +1,353 @@
-name: T3ssentials
+
 author: T31337
+version: 1.0
+commands: 
+  Bed: 
+    description: "Send <player> To Their Bed"
+    permission: T3.Bed.Other
+    usage: "/Bed <player>"
+  Creeper: 
+    description: "Spawns A Creeper"
+    permission: T3.Creeper
+    usage: /Creeper
+  Day: 
+    description: "Turn GameWorld To Day"
+    permission: T3.Day
+    usage: /Day
+  Donkey: 
+    description: "Spawn A Donkey"
+    permission: T3.Donkey
+    usage: /Donkey
+  Feed: 
+    description: "Feed Player"
+    permission: T3.Feed
+    usage: /Feed
+  Flight: 
+    description: "Toggle Flight Ability"
+    permission: T3.Flight
+    usage: /flight
+  Night: 
+    description: "Turn GameWorld To Night"
+    permission: T3.Night
+    usage: /night
+  OI: 
+    aliases: 
+      - openInventory
+    default: op
+    description: "Open Inventory Of Player"
+    permission: T3.OpenInventory
+    usage: "/oi <player>"
+  PVP: 
+    description: "Toggle PVP"
+    permission: T3.PVP
+    usage: /pvp
+  Pat: 
+    description: "Pat Player On The Back"
+    permission: T3.Pat
+    usage: "/pat <player>"
+  PoweredCreeper: 
+    description: "Personal Creeper"
+    permission: T3.PoweredCreeper
+    usage: /PoweredCreeper
+  Quit: 
+    description: "Leave Server With Quit Message"
+    permission: T3.Quit
+    usage: "/quit <message>"
+  Smite: 
+    description: "Strikes <player> With Lightning"
+    permission: T3.Smite
+    usage: "/smite <player>"
+  Summon: 
+    description: "Teleports <player> To Self"
+    permission: T3.Summon
+    usage: "/summon <player>"
+  T3: 
+    description: "T31337s Custom Command"
+    permission: T3.T3
+    usage: /T3
+  Troll: 
+    description: "Troll Player"
+    permission: T3.Troll
+    usage: "/Troll <Player>"
+  boomstick: 
+    description: "Gives The BoomStick To Player!"
+    permission: T3.BoomStick
+    usage: "/boomstick <player>"
+  chat: 
+    description: "Cause <Player> To Chat A Message"
+    permission: T3.Chat
+    usage: "/chat <player> <Message>"
+  ct: 
+    description: "Open CraftingTable Interface"
+    permission: T3.CraftingTable
+    usage: /ct
+  ec: 
+    description: "Open EnderChest Of <Player>"
+    permission: T3.EnderChest.Other
+    usage: "/ec <Player>"
+  gm: 
+    description: "Toggle GameMode Of <player> Between Creative And Survival"
+    permission: T3.GameMode.Other
+    usage: "/gm <player>"
+  heal: 
+    description: "Heal Player"
+    permission: T3.Heal
+    usage: /Heal
+  ignite: 
+    description: "Sets <player> On Fire"
+    permission: T3.Ignite
+    usage: /ignite
+  kk: 
+    description: "Kicks Player With Message"
+    permission: T3.kk
+    usage: "/kk <player> (Message)"
+  loc: 
+    description: "Show Location Of Player"
+    permission: T3.Location.Other
+    usage: "/loc <player>"
+  name: 
+    description: "Name Item In Hand"
+    permission: T3.NameItem
+    usage: "/name <Name For Item>"
+  ni: 
+    description: "Name Item"
+    permission: T3.NameItem
+    usage: "/ni Name For Item"
+  ob: 
+    description: "Teleport To Bed Of <player> (<player> MUST Be Online)"
+    permission: T3.Bed.Other
+    usage: "/ob <player>"
+  pat: 
+    description: "Pat <player> On The Back"
+    permission: T3.Pat
+    usage: "/pat <player>"
+  rl: 
+    description: "Teleport To Random Location!"
+    permission: T3.Random
+    usage: /rl
+  rs: 
+    description: "Transport Back To Spawn"
+    permission: T3.2Spawn
+    usage: /rs
+  setSpawn: 
+    default: op
+    description: "Set World Spwan Point"
+    permission: T3.setSpawn
+  su: 
+    aliases: 
+      - "sudo,runas"
+    default: op
+    description: "Run Command As Another Player"
+    permission: T3.su
 description: "T31337'S Essential Plugin"
 main: O1010100.T3
-version: 1.0
-commands:
-    PVP:
-        description: "Toggle PVP"
-        permission: T3.PVP
-        usage: /pvp
-    Night:
-        description: "Turn GameWorld To Night"
-        permission: T3.Night
-        usage: /night
-    Day:
-        description: "Turn GameWorld To Day"
-        permission: T3.Day
-        usage: /Day
-    Feed:
-        description: "Feed Player"
-        permission: T3.Feed
-        usage: "/Feed"
-    heal:
-        description: "Heal Player"
-        permission: T3.Heal
-        usage: /Heal 
-    Bed: 
-        description: "Send <player> To Their Bed"
-        permission: T3.Bed.Other
-        usage: "/Bed <player>"
-    Creeper: 
-        description: "Spawns A Creeper"
-        permission: T3.Creeper
-        usage: /Creeper
-    Donkey: 
-        description: "Spawn A Donkey"
-        permission: T3.Donkey
-        usage: /Donkey
-    Flight: 
-        description: "Toggle Flight Ability"
-        permission: T3.Flight
-        usage: /flight
-    OI: 
-        aliases: 
-            - "openInventory"
-        default: op
-        description: "Open Inventory Of Player"
-        permission: T3.OpenInventory
-        usage: "/oi <player>"
-    Pat: 
-        description: "Pat Player On The Back"
-        permission: T3.Pat
-        usage: "/pat <player>"
-    PoweredCreeper: 
-        description: "Personal Creeper"
-        permission: T3.PoweredCreeper
-        usage: /PoweredCreeper
-    Quit: 
-        description: "Leave Server With Quit Message"
-        permission: T3.Quit
-        usage: "/quit <message>"
-    Smite: 
-        description: "Strikes <player> With Lightning"
-        permission: T3.Smite
-        usage: "/smite <player>"
-    Summon: 
-        description: "Teleports <player> To Self"
-        permission: T3.Summon
-        usage: "/summon <player>"
-    T3: 
-        description: "T31337s Custom Command"
-        permission: T3.T3
-        usage: /T3
-    Troll: 
-        description: "Troll Player"
-        permission: T3.Troll
-        usage: "/Troll <Player>"
-    boomstick: 
-        description: "Gives The BoomStick To Player!"
-        permission: T3.BoomStick
-        usage: "/boomstick <player>"
-    chat: 
-        description: "Cause <Player> To Chat A Message"
-        permission: T3.Chat
-        usage: "/chat <player> <Message>"
-    ct: 
-        description: "Open CraftingTable Interface"
-        permission: T3.CraftingTable
-        usage: /ct
-    ec: 
-        description: "Open EnderChest Of <Player>"
-        permission: T3.EnderChest.Other
-        usage: "/ec <Player>"
-    gm: 
-        description: "Toggle GameMode Of <player> Between Creative And Survival"
-        permission: T3.GameMode.Other
-        usage: "/gm <player>"
-    ignite: 
-        description: "Sets <player> On Fire"
-        permission: T3.Ignite
-        usage: /ignite
-    kk: 
-        description: "Kicks Player With Message"
-        permission: T3.kk
-        usage: "/kk <player> (Message)"
-    loc: 
-        description: "Show Location Of Player"
-        permission: T3.Location.Other
-        usage: "/loc <player>"
-    name: 
-        description: "Name Item In Hand"
-        permission: T3.NameItem
-        usage: "/name <Name For Item>"
-    ob: 
-        description: "Teleport To Bed Of <player> (<player> MUST Be Online)"
-        permission: T3.Bed.Other
-        usage: "/ob <player>"
-    pat: 
-        description: "Pat <player> On The Back"
-        permission: T3.Pat
-        usage: "/pat <player>"
-    rl: 
-        description: "Teleport To Random Location!"
-        permission: T3.Random
-        usage: /rl
-    ni:
-        description: "Name Item"
-        permission: T3.NameItem
-        usage: /ni Name For Item
-    rs: 
-        description: "Transport Back To Spawn"
-        permission: T3.2Spawn
-        usage: /rs
-    su: 
-        aliases: 
-            - "sudo,runas"
-        default: op
-        description: "Run Command As Another Player"
-        permission: T3.su
-        
-    setSpawn:
-        default: op
-        description: "Set World Spwan Point"
-        permission: T3.setSpawn
+name: T3ssentials
 permissions: 
-    T3.*: 
-        children:
-        	T3.Smite.Denied: true
-        	T3.Smite: true
-            T3.PVP: true
-            T3.Day: true
-            T3.Night: true
-            T3.Heal: true
-            T3.Heal.Other: true
-            T3.Feed: true
-            T3.Feed.Other: true 
-            T3.Bed: true
-            T3.Bed.Other: true
-            T3.BoomStick: true
-            T3.Creeper: true
-            T3.Donkey: true
-            T3.EnderCheset.Other: true
-            T3.EnderChest: true
-            T3.Flight: true
-            T3.Flight.Other: true
-            T3.Ignite: true
-            T3.Location: true
-            T3.Location.Hidden: true
-            T3.Location.Other: true
-            T3.Pat: true
-            T3.PoweredCreeper: true
-            T3.Quit: true
-            T3.Summon: true
-            T3.Summon.Denied: true
-            T3.T3: true
-            T3.Troll: true
-            T3.Troll.Denied: true
-            T3.CraftingTable: true
-            T3.GameMode: true
-            T3.GameMode.Other: true
-            T3.GameMode.Other.Denied: true
-            T3.kk: true
-            T3.NameItem: true
-            T3.OpenInventory: true
-            T3.OpenInventory.Other: true
-            T3.OpenInventory.Denied: true
-            T3.RandomLocation: true
-            T3.Respawn: false
-            T3.2Spawn: true
-            T3.2Spwn.Other: true
-            T3.su.Console: true
-            T3.su.Player: true
-            T3.setSpawn: true
-    T3.PVP:
-        default: op
-        description: "Toggle World PVP"
-    T3.Heal:
-        default: op
-        description: "Heal Player"
-    T3.Heal.Other:
-        default: op
-        description: "Heal Other Player"
-    T3.Day:
-        default: op
-        description: "Allow Player To Set World To Day"
-    T3.Night:
-        default: op
-        description: "Allow Player To Set Night"
-    T3.Feed:
-        default: op
-        description: "Feed Player"
-    T3.Feed.Other:
-        default: op
-        description: "Feed Other Player"
-    T3.Bed: 
-        default: true
-        description: "Teleport Player To Their Bed"
-    T3.Bed.Other:
-        default: op
-        description: "Allow Player To Send Specified Player To Their Bed"
-    T3.Bed.Other.Denied:
-        default: op
-        description: "Prevent Others From Teleporting To Player's Bed"
-    T3.BoomStick: 
-        default: op
-        description: "Allow Player BoomSticking"
-    T3.Creeper: 
-        default: op
-        description: "Spawns A Creeper"
-    T3.Donkey: 
-        default: true
-        description: "Spawn A Donkey"
-    T3.EnderChest: 
-        default: true
-        description: "Open EnderChest"
-    T3.EnderChest.Other: 
-        default: op
-        description: "Open EnderChest Of <Player>"
-    T3.EnderChest.Other.Denied:
-        default: op
-        description: "Stop Others From Snooping In Player's EnderChest"
-    T3.Flight: 
-        default: true
-        description: "Allows Player To Toggle Fly Mode"
-    T3.Flight.Other: 
-        default: op
-        description: "Allows Toggle Of Specified Players Fly Mode"
-    T3.Flight.Other.Denied:
-        default: op
-        description: "Stops Others From Toggling Player's Flight"
-    T3.Ignite: 
-        default: op
-        description: "Set Specified Player On Fire"
-    T3.Igninte.Denied:
-        default: op
-        description: "Prevents Player From Being /Ignited"
-    T3.Location: 
-        default: true
-        description: "Current Location"
-    T3.Location.Hidden: 
-        default: op
-        description: "Prevents Players Location From Being Shown Via /LOC"
-    T3.Location.Other:
-        default: op 
-        description: "Location Of Other Players"
-    T3.Survival: 
-        default: true
-        description: "Automatically Sets Players GameMode To Survival When They Join The Server!"
-    T3.StartSpawn: 
-        default: true
-        description: "Prevent Player From Being Send Back To Spawn After Death"
-    T3.Pat: 
-        default: true
-        description: "Pat <player> On The Back"
-    T3.PoweredCreeper: 
-        default: op
-        description: PoweredCreeper
-    T3.Quit: 
-        default: true
-        description: "Allows Player To Leave Server With A Broadcast Message"
-    T3.Summon: 
-        default: op
-        description: "Allows Player To Teleport Specified Player To Them"
-    T3.Summon.Denied:
-        default: op
-        description: "Denies Players /Summon Request"
-    T3.T3: 
-        default: true
-        description: "Special Command Written By T31337"
-    T3.Troll: 
-        default: op
-        description: "Allows Player To Troll Other Players"
-    T3.Troll.Denied: 
-        default: op
-        description: "Prevents Player From Being Trolled By Others"
-    T3.CraftingTable: 
-        default: true
-        description: "Open A CraftingTable Interface"
-    T3.GameMode: 
-        default: op
-        description: "Allows Player To Toggle GameMode Between Creative And Survival"
-    T3.GameMode.Other: 
-        default: op
-        description: "Toggle GameMode Of Specified Player"
-    T3.GameMode.Other.Denied:
-        default: op
-        description: "Prevents Others From Toggling Player's GameMode"
-    T3.kk: 
-        default: op
-        description: "Allows Player To Kick Specified Player"
-    T3.NameItem: 
-        default: op
-        description: "Name Item"
-    T3.OpenInventory: 
-        default: op
-        description: "View Player Inventories"
-    T3.OpenInventory.Denied:
-        default: op
-        description: "Prevents Others From Snooping In Player's Inventory"
-    T3.Random: 
-        default: true
-        description: "Teleport To A Random Location!"
-    T3.2Spawn: 
-        default: true
-        description: "Allow Player To Return To Spawn"
-    T3.Resawn:
-    	default: false
-    	description: "Forces Player Back To Spawn At Death/Respawn"
-    T3.2Spawn.Other: 
-        default: op
-        description: "Send Specified Player To Spawn Upon Death/Respawn"
-    T3.su.console: 
-        default: false
-        description: "Force Console To Run Command"
-    T3.su.player: 
-        default: op
-        description: "Force Player To Run Command"
-    T3.setSpawn:
-        default: false
-        description: "Set World Spawn Point"
-    T3.Smite.Denied:
-    	description: "Prevents Player From Being Smitten"
-    	default: op
-    T3.Smite:
-    	description: "Allows Player To Smite Others"
-    	default: op
+  T3.*: 
+    children: 
+      T3.2Spawn: true
+      T3.2Spwn.Other: true
+      T3.Bed: true
+      T3.EnderChest.Denied: true
+      T3.Bed.Other: true
+      T3.BoomStick: true
+      T3.CraftingTable: true
+      T3.Creeper: true
+      T3.Day: true
+      T3.Donkey: true
+      T3.EnderCheset.Other: true
+      T3.EnderChest: true
+      T3.Feed: true
+      T3.Feed.Other: true
+      T3.Flight: true
+      T3.Flight.Other: true
+      T3.GameMode: true
+      T3.GameMode.Other: true
+      T3.GameMode.Denied: true
+      T3.Heal: true
+      T3.Heal.Other: true
+      T3.Ignite.Denied: true
+      T3.Ignite: true
+      T3.Location: true
+      T3.Location.Hidden: true
+      T3.Location.Other: true
+      T3.NameItem: true
+      T3.Night: true
+      T3.OpenInventory: true
+      T3.OpenInventory.Denied: true
+      T3.OpenInventory.Other: true
+      T3.PVP: true
+      T3.Pat: true
+      T3.PoweredCreeper: true
+      T3.Quit: true
+      T3.RandomLocation: true
+      T3.Respawn: false
+      T3.2Spawn.Denied: true
+      T3.Smite: true
+      T3.Smite.Denied: true
+      T3.Summon: true
+      T3.StartSpawn: false
+      T3.Summon.Denied: true
+      T3.T3: true
+      T3.Troll: true
+      T3.Troll.Denied: true
+      T3.kk: true
+      T3.setSpawn: true
+      T3.su.Console: true
+      T3.su.Player: true
+  T3.2Spawn: 
+    default: true
+    description: "Allow Player To Return To Spawn"
+  T3.2Spawn.Other: 
+    default: op
+    description: "Send Specified Player To Spawn Upon Death/Respawn"
+  T3.StartSpawn:
+    default: false
+    description: "Teleport Player To Spawn On Join"
+  T3.Bed: 
+    default: true
+    description: "Teleport Player To Their Bed"
+  T3.Bed.Other: 
+    default: op
+    description: "Allow Player To Send Specified Player To Their Bed"
+  T3.Bed.Denied: 
+    default: op
+    description: "Prevent Others From Teleporting To Player's Bed"
+  T3.BoomStick: 
+    default: op
+    description: "Allow Player BoomSticking"
+  T3.CraftingTable: 
+    default: true
+    description: "Open A CraftingTable Interface"
+  T3.Creeper: 
+    default: op
+    description: "Spawns A Creeper"
+  T3.Day: 
+    default: op
+    description: "Allow Player To Set World To Day"
+  T3.Donkey: 
+    default: true
+    description: "Spawn A Donkey"
+  T3.EnderChest: 
+    default: true
+    description: "Open EnderChest"
+  T3.EnderChest.Other: 
+    default: op
+    description: "Open EnderChest Of <Player>"
+  T3.EnderChest.Denied: 
+    default: op
+    description: "Stop Others From Snooping In Player's EnderChest"
+  T3.Feed: 
+    default: op
+    description: "Feed Player"
+  T3.Feed.Other: 
+    default: op
+    description: "Feed Other Player"
+  T3.Flight: 
+    default: true
+    description: "Allows Player To Toggle Fly Mode"
+  T3.Flight.Other: 
+    default: op
+    description: "Allows Toggle Of Specified Players Fly Mode"
+  T3.Flight.Denied: 
+    default: op
+    description: "Stops Others From Toggling Player's Flight"
+  T3.GameMode: 
+    default: op
+    description: "Allows Player To Toggle GameMode Between Creative And Survival"
+  T3.GameMode.Other: 
+    default: op
+    description: "Toggle GameMode Of Specified Player"
+  T3.GameMode.Denied: 
+    default: op
+    description: "Prevents Others From Toggling Player's GameMode"
+  T3.Heal: 
+    default: op
+    description: "Heal Player"
+  T3.Heal.Other: 
+    default: op
+    description: "Heal Other Player"
+  T3.Igninte.Denied: 
+    default: op
+    description: "Prevents Player From Being /Ignited"
+  T3.Ignite: 
+    default: op
+    description: "Set Specified Player On Fire"
+  T3.Location: 
+    default: true
+    description: "Current Location"
+  T3.Location.Hidden: 
+    default: op
+    description: "Prevents Players Location From Being Shown Via /LOC"
+  T3.Location.Other: 
+    default: op
+    description: "Location Of Other Players"
+  T3.NameItem: 
+    default: op
+    description: "Name Item"
+  T3.Night: 
+    default: op
+    description: "Allow Player To Set Night"
+  T3.OpenInventory: 
+    default: op
+    description: "View Player Inventories"
+  T3.OpenInventory.Denied: 
+    default: op
+    description: "Prevents Others From Snooping In Player's Inventory"
+  T3.PVP: 
+    default: op
+    description: "Toggle World PVP"
+  T3.Pat: 
+    default: true
+    description: "Pat <player> On The Back"
+  T3.PoweredCreeper: 
+    default: op
+    description: PoweredCreeper
+  T3.Quit: 
+    default: true
+    description: "Allows Player To Leave Server With A Broadcast Message"
+  T3.Random: 
+    default: true
+    description: "Teleport To A Random Location!"
+  T3.Respawn: 
+    default: false
+    description: "Forces Player Back To Spawn At Death/Respawn"
+  T3.Smite: 
+    default: op
+    description: "Allows Player To Smite Others"
+  T3.Smite.Denied: 
+    default: op
+    description: "Prevents Player From Being Smitten"
+  T3.StartSpawn: 
+    default: true
+    description: "Prevent Player From Being Send Back To Spawn After Death"
+  T3.Summon: 
+    default: op
+    description: "Allows Player To Teleport Specified Player To Them"
+  T3.Summon.Denied: 
+    default: op
+    description: "Denies Players /Summon Request"
+  T3.Survival: 
+    default: true
+    description: "Automatically Sets Players GameMode To Survival When They Join The Server!"
+  T3.T3: 
+    default: true
+    description: "Special Command Written By T31337"
+  T3.Troll: 
+    default: op
+    description: "Allows Player To Troll Other Players"
+  T3.Troll.Denied: 
+    default: op
+    description: "Prevents Player From Being Trolled By Others"
+  T3.kk: 
+    default: op
+    description: "Allows Player To Kick Specified Player"
+  T3.setSpawn: 
+    default: false
+    description: "Set World Spawn Point"
+  T3.su.console: 
+    default: false
+    description: "Force Console To Run Command"
+  T3.su.player: 
+    default: op
+    description: "Force Player To Run Command"

@@ -65,6 +65,11 @@ public class quit implements CommandExecutor
 					p.kickPlayer(":( Hope To See You Again Soon :)");
 					return true;
 				}
+				else
+				{
+					p.sendMessage("usage: /quit <Message>");
+					return true;
+				}
 
 			}
 			else
@@ -72,7 +77,8 @@ public class quit implements CommandExecutor
 				sender.sendMessage(ChatColor.RED+"Sorry, You Do Not Have Permission To Do That...");
 				plugin.log.info(sender.getName()+" Was DENIED Access To /Quit");
 				return true;
-			}		}
-		return false;
+			}	
+			
+		}
 	}
 }

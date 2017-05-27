@@ -2,18 +2,24 @@ package O1010100;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Color;
+import org.bukkit.FireworkEffect;
+import org.bukkit.FireworkEffect.Type;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.FireworkMeta;
 
 public class PlayerJoin implements Listener
 {
 	T3 plugin;
+	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onPlayerJoin(final PlayerJoinEvent e)
 	{
@@ -49,8 +55,8 @@ public class PlayerJoin implements Listener
 				}
 			}
 		}
-		/*
-		if(p.hasPermission("T3.WelcomeFirework"))
+		
+		if(!p.hasPermission("T3.NoFirework"))
 		{
 			//ToDo: Make This User Configurable
 			Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(T3.plugin, new Runnable()
@@ -59,13 +65,13 @@ public class PlayerJoin implements Listener
 				{
 					Firework f = (Firework) e.getPlayer().getWorld().spawn(e.getPlayer().getLocation(), Firework.class);
 					FireworkMeta fm = f.getFireworkMeta();
-					fm.addEffect(FireworkEffect.builder().flicker(true).trail(true).with(Type.CREEPER).withColor(Color.GREEN).withFade(Color.AQUA).build());
+					fm.addEffect(FireworkEffect.builder().flicker(true).trail(true).with(Type.CREEPER).withColor(Color.GREEN,Color.PURPLE).withFade(Color.AQUA).build());
 					fm.setPower(2);
-					f.setFireworkMeta(fm);
+					f.setFireworkMeta(fm);					
 				}
 			}, 20);
 		}//FireWork
-		 
+		 /*
 		if(p.hasPermission("T3.Troll"))
 		{
 			p.setFireTicks(5*20);
@@ -79,7 +85,7 @@ public class PlayerJoin implements Listener
 				}
 			}, 20*9);
 		}
-		*/
+		*/		
 		if(p.isOp())
 		{
 			p.setAllowFlight(true);
