@@ -148,7 +148,6 @@ permissions:
       T3.2Spwawn.Denied: true
       T3.2Spawn.Other: true
       T3.Bed: true
-      T3.EnderChest.Denied: true
       T3.Bed.Other: true
       T3.BoomStick: true
       T3.CraftingTable: true
@@ -181,11 +180,11 @@ permissions:
       T3.Pat: true
       T3.PoweredCreeper: true
       T3.Quit: true
-      T3.RandomLocation: true
+      T3.Random: true
       T3.Respawn: false
-      T3.2Spawn.Denied: true
       T3.Smite: true
       T3.Smite.Denied: true
+      T3.StartSpwan: false
       T3.Summon: true
       T3.StartSpawn: false
       T3.Summon.Denied: true

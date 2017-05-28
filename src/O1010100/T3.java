@@ -154,7 +154,6 @@ public class T3 extends JavaPlugin
 		//
 		//msgr = new Messanger(this);
 		//msgr.runTaskTimer(this, 0, 30*20/*ticks*/);//20 ticks = 1 second//Dependent On User Config	
-		
 		this.getCommand("setSpawn").setExecutor(new setSpawn(this));
 		this.getCommand("feed").setExecutor(new Feed(this));
 		this.getCommand("heal").setExecutor(new Heal(this));

@@ -35,12 +35,13 @@ public class rl implements CommandExecutor
 				int randomY = player.getWorld().getHighestBlockYAt(randomX, randomZ);//Non Air Block
 				
 				Location randomLocation = new Location(player.getWorld(),randomX,randomY,randomZ+1);				
-				Material uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()+1).getType();
+				Material uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()).getType();
 				while(uf == Material.LAVA || uf == Material.WATER || uf == Material.AIR)
 				{
 					randomLocation = new Location(player.getWorld(),randomX,randomY,randomZ);
-					uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()+1).getType();
+					uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()).getType();
 				}
+				randomLocation.setZ(randomZ+1);
 				player.teleport(randomLocation);
 				player.sendMessage(String.format("Teleported To: ({0},{1},{2})",player.getLocation().getBlockX(),player.getLocation().getBlockY(),player.getLocation().getBlockZ()));			
 				return true;
