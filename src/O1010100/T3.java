@@ -151,7 +151,6 @@ public class T3 extends JavaPlugin
 			T3Cfg.saveConfig();
 			
 		}
-		
 		//
 		//msgr = new Messanger(this);
 		//msgr.runTaskTimer(this, 0, 30*20/*ticks*/);//20 ticks = 1 second//Dependent On User Config	
