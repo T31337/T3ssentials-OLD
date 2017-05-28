@@ -7,7 +7,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Feed implements CommandExecutor {
+public class Feed implements CommandExecutor 
+{
 	T3 plugin;
 	public Feed(T3 plugin)
 	{
@@ -40,7 +41,7 @@ public class Feed implements CommandExecutor {
 				if(sender.hasPermission("T3.Feed.Other"))
 				{
 					Player t = Bukkit.getPlayer(args[0]);
-					t.setExhaustion(200f);
+					t.setExhaustion(0f);
 					t.sendMessage(ChatColor.LIGHT_PURPLE+"You Have Been Fed!");
 					return true;
 				}

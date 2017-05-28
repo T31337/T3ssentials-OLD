@@ -32,19 +32,18 @@ public class rl implements CommandExecutor
 				int randomX =  (int) (Math.random() * distance);
 				int randomZ = (int)(Math.random()*distance);
 			
-				int randomY = player.getWorld().getHighestBlockYAt(randomX, randomZ)+1;//+1 to avoid getting stuck in that block
+				int randomY = player.getWorld().getHighestBlockYAt(randomX, randomZ);//Non Air Block
 				
-				Location randomLocation = new Location(player.getWorld(),randomX,randomY,randomZ);				
-				Material uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()).getType();
+				Location randomLocation = new Location(player.getWorld(),randomX,randomY,randomZ+1);				
+				Material uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()+1).getType();
 				while(uf == Material.LAVA || uf == Material.WATER || uf == Material.AIR)
 				{
 					randomLocation = new Location(player.getWorld(),randomX,randomY,randomZ);
-					uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()).getType();
+					uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()+1).getType();
 				}
-				player.sendMessage("Teleported To: X:"+randomX+" Y:"+randomY+" Z:"+randomZ);
 				player.teleport(randomLocation);
+				player.sendMessage(String.format("Teleported To: ({0},{1},{2})",player.getLocation().getBlockX(),player.getLocation().getBlockY(),player.getLocation().getBlockZ()));			
 				return true;
-
 			}
 			else
 			{

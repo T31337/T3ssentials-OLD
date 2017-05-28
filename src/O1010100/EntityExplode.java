@@ -30,7 +30,7 @@ public class EntityExplode implements Listener
 			{
 				if(!currer.hasPermission("T3.TNT"))
 				{
-					currer.sendMessage(ChatColor.RED+"Insufficent Permissions...");
+					currer.sendMessage(ChatColor.RED+"Insufficent Permissions... (T3.TNT).");
 					event.setCancelled(true);
 				}
 			}

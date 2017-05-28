@@ -51,14 +51,13 @@ public class ec implements CommandExecutor
 			  if(args.length==0)
 			  {
 				
-					  if(sender.hasPermission("T3.EnderChest"))
-					  {
-						  Player p = (Player) sender;
-						  p.openInventory(p.getEnderChest());
-						  Bukkit.getLogger().info(sender.getName()+" Was ALLOWED Access To /EC");
-						  Bukkit.getLogger().info(ChatColor.RED+"Node: T3.EnderChest");
-						  return true;
-					  }
+				  if(sender.hasPermission("T3.EnderChest"))
+				  {
+					  Player p = (Player) sender;
+					  p.openInventory(p.getEnderChest());
+					  Bukkit.getLogger().info(sender.getName()+" Was ALLOWED Access To /EC");
+					  Bukkit.getLogger().info(ChatColor.RED+"Node: T3.EnderChest");
+					  return true;
 				  }
 				  else
 				  {
@@ -66,12 +65,17 @@ public class ec implements CommandExecutor
 					  plugin.log.info(sender.getName()+" Was DENIED Access To /EC");
 					  return true;
 				  }
+			  }
+			  else
+			  {
+				  sender.sendMessage("Usage: /ec || /ec <Player>");
+				  return true;
+			  }
 		}
 		else
 		{
 			sender.sendMessage("Only Players May Use /EC...");
-			return false;
-		}
-		return false;
+			return true;
+		}		
 	}
 }

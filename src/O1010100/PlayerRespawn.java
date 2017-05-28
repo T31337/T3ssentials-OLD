@@ -26,7 +26,7 @@ public class PlayerRespawn implements Listener
 		}
 		else
 		{
-			event.getPlayer().teleport(T3.DeathLocation);
+			//TODO: Return Player To Death Location...
 		}
 		
 		if(T3.plugin.SpawnGifts)

@@ -18,7 +18,7 @@ public class PlayerInteract implements Listener
 	@EventHandler
 	public void Interact(PlayerInteractEvent e)
 	{
-		Player p = e.getPlayer();
+			Player p = e.getPlayer();
 		if(e.getClickedBlock() instanceof Witch)
 		{
 			if(p.getItemInHand().getType()==Material.AIR)
@@ -34,6 +34,10 @@ public class PlayerInteract implements Listener
 				{
 					Snowball snowball = p.getWorld().spawn(p.getEyeLocation(), Snowball.class);//Spawn The SnowBall
 					snowball.setVelocity(p.getLocation().getDirection().multiply(1.5)); //Make It Fly
+					if(p.hasPermission("T3.FireBoomStick"))
+					{
+						snowball.setFireTicks(500);
+					}
 					snowball.setShooter(p);
 					
 				}
@@ -48,6 +52,11 @@ public class PlayerInteract implements Listener
 			{
 				Arrow Arrow = p.getWorld().spawn(p.getEyeLocation(), Arrow.class);
 				Arrow.setVelocity(p.getLocation().getDirection().multiply(1.5));
+				if(p.hasPermission("T3.FireBoomStick"))
+				{
+					Arrow.setFireTicks(500);
+				}
+					
 				Arrow.setShooter(p);
 			}
 			else

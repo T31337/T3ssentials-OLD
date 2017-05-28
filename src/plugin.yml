@@ -1,4 +1,6 @@
-
+description: "T31337'S Essential Plugin"
+main: O1010100.T3
+name: T3ssentials
 author: T31337
 version: 1.0
 commands: 
@@ -139,14 +141,12 @@ commands:
     default: op
     description: "Run Command As Another Player"
     permission: T3.su
-description: "T31337'S Essential Plugin"
-main: O1010100.T3
-name: T3ssentials
 permissions: 
   T3.*: 
     children: 
       T3.2Spawn: true
-      T3.2Spwn.Other: true
+      T3.2Spwawn.Denied: true
+      T3.2Spawn.Other: true
       T3.Bed: true
       T3.EnderChest.Denied: true
       T3.Bed.Other: true
@@ -157,6 +157,7 @@ permissions:
       T3.Donkey: true
       T3.EnderCheset.Other: true
       T3.EnderChest: true
+      T3.EnderChest.Denied: true
       T3.Feed: true
       T3.Feed.Other: true
       T3.Flight: true

@@ -29,9 +29,10 @@ public class DonkeyCmd implements CommandExecutor
 			if(sender.hasPermission("T3.Donkey"))
 			{
 				 Player p = (Player)sender;
-				 Horse h=(Horse)p.getWorld().spawn(p.getLocation().add((p.getLocation().getDirection().getZ()+2), 1, 0), Horse.class);
-				 h.setVariant(Horse.Variant.DONKEY);
-				 h.setOwner(p);
+				 Horse donkey=(Horse)p.getWorld().spawn(p.getLocation().add((p.getLocation().getDirection().getZ()+2), 1, 0), Horse.class);
+				 donkey.setVariant(Horse.Variant.DONKEY);
+				 donkey.setOwner(p);
+				 donkey.setCustomName(String.format(ChatColor.WHITE+"{0}'s {1} Donkey!",p.getName(),ChatColor.DARK_PURPLE));
 				 p.sendMessage(ChatColor.AQUA+"You Spawned A Donkey!");
 				 return true;
 			}
