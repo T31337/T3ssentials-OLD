@@ -41,7 +41,7 @@ public class rl implements CommandExecutor
 					randomLocation = new Location(player.getWorld(),randomX,randomY,randomZ);
 					uf = player.getWorld().getBlockAt((int)randomLocation.getX(),(int)randomLocation.getY(),(int)randomLocation.getZ()).getType();
 				}
-				randomLocation.setZ(randomZ+1);
+				//randomLocation.setZ(randomZ+1);
 				player.teleport(randomLocation);
 				player.sendMessage(String.format("Teleported To: ({0},{1},{2})",player.getLocation().getBlockX(),player.getLocation().getBlockY(),player.getLocation().getBlockZ()));			
 				return true;

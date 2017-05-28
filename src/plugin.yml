@@ -1,6 +1,8 @@
 description: "T31337'S Essential Plugin"
 main: O1010100.T3
 name: T3ssentials
+load:
+    -POSTWORLD
 author: T31337
 version: 1.0
 commands: 
