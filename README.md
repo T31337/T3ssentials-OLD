@@ -7,7 +7,9 @@ T31337's Custom Minecraft Plugin For Bukkit/Spigot Servers
 
 I Always Welcome Constructive Critisim (Please Be Nice About It) And Suggestions, Thanks ")
 
-New Version Here: https://www.github.com/T31337/T3ssentials
+New Version Here:
+
+https://www.github.com/T31337/T3ssentials
 =============================
 
 -T31337
